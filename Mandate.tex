@@ -1,0 +1,53 @@
+\documentclass{report}
+
+% Packages
+\usepackage[dutch]{babel}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+% Literals
+\newcommand{\versionnumber}{0.1}
+
+\newcommand{\name}{Swen Meeuwes}
+\newcommand{\studentnumber}{088127}
+\newcommand{\institution}{Rotterdam University of Applied Sciences}
+\newcommand{\organisation}{\&ranj}
+
+\renewcommand{\title}{THESIS TITLE}
+\newcommand{\subtitle}{Sub title}
+
+\begin{document}
+\begin{titlepage}
+        \centering
+        \includegraphics[width=2cm]{Images/University}\par
+        \vspace{4\baselineskip}
+        {\Huge\title\par}
+        {\Large\subtitle\par}
+        \par
+        \includegraphics[width=3cm]{Images/Organisation}
+        \vspace{4\baselineskip}
+        \par
+        {\Large\name\par}
+        {Studentnummer: \studentnumber\par}
+        \vfill
+        {\hfill Versie: \versionnumber\par}
+        {\hfill \today}
+\end{titlepage}
+
+\chapter*{Samenvatting}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\chapter{Inleiding}
+\section{Werktitel}
+
+\bibliographystyle{plain}
+\bibliography{References}
+\nocite{Lorem}
+
+\end{document}
