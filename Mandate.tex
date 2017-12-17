@@ -3,6 +3,7 @@
 % Packages
 \usepackage[dutch]{babel}
 \usepackage{datetime}
+\usepackage[nottoc,numbib]{tocbibind}
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
@@ -147,14 +148,10 @@ Bij \organisation wordt er vooral met de Scrum en Waterval projectmethodes gewer
 
 \section{Beoogd resultaat van de opdracht}
 
-
-\chapter{Literatuur}
-
-
+% Chapter: Literatuur
 \bibliographystyle{plain}
+\renewcommand{\bibname}{Literatuur}
 \bibliography{References}
-%temp
-\nocite{interviewivo}
 
 \chapter{Betrokkenen}
 
