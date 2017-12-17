@@ -61,18 +61,18 @@ Het verbeteren van tooling in narratieve spellen.
 %\organisation past \emph{serious games} vooral toe in educatie, trainingen en simulaties door middel van een narratief \cite{websiteranj}.
 %Om workflow te bevorderen wordt er gebruik gemaakt van een dialoog bewerker \cite{interviewivo}. Echter sluit deze tool niet meer aan bij de werkwijze van \organisation \cite{interviewivo} wat zorgt voor een obstakel in het ontwikkelproces.
 
-Rond 2011 begon \organisation \emph{narrative games} te verwerken in hun \emph{serious games} om in een verhalende wijze gedragsverandering toe te passen. Om game designers deze narratieven te laten defini{\"e}ren zijn er 2 bewerkers gebouwd; een dialoog bewerker en een verhaal bewerker. De huidige versies van deze bewerkers zijn gemaakt met de \href{https://en.wikipedia.org/wiki/Apache_Flex}{Apache Flex SDK} in \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3}.
-Over de jaren heen zijn de verwachtingen van de bewerkers veranderd, maar ze zijn niet tot weinig uitgebreid omdat de achterliggende softwarearchitectuur niet schaalbaar en houdbaar is. Tenslotte hebben steeds minder programmeurs binnen het bedrijf kennis van de code base achter de bewerkers.
+Rond 2011 begon \organisation narratieven te verwerken in hun \emph{serious games} om op verhalende wijze gedragsverandering toe te passen. Om game designers deze narratieven te laten defini{\"e}ren zijn er 2 bewerkers opgezet; een voor de verhaallijn en een voor de dialogen die plaats vinden in deze verhaallijn. De huidige versies van deze bewerkers zijn gemaakt met behulp van de \href{https://en.wikipedia.org/wiki/Apache_Flex}{Apache Flex SDK} en \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3}.
+Over de jaren heen zijn de verwachtingen van de bewerkers veranderd, maar ze zijn niet tot weinig uitgebreid omdat de achterliggende softwarearchitectuur niet schaal- en houdbaar is. Tenslotte werken er steeds minder programmeurs bij het bedrijf die kennis hebben van de code base achter de bewerkers.
 
 \section{Belang}
-De conclusie en de aanbevelingen die voort komen uit het afstudeerverslag zijn input voor de beslissingen van \organisation op het gebied van narratieve omgevingsbewerkers. Vanuit deze input zal het bedrijf een nieuwe omgeving opzetten waarin game designers hun narratieven kunnen defini{\"e}ren. Het is daarom ook belangrijk om de game designers bij dit onderzoek te betrekken. Verder zullen toekomstige games de output van deze narratieve bewerker moeten verwerken. Dit betekend dat de nieuwe omgeving ge{\"i}ntegreerd zal moeten worden met het game framework van \organisation en dat dus de game developers inspraak moeten over technische keuzes binnen het project. Tenslotte halen de klanten van \organisation ook profijt uit deze nieuwe omgeving. De nieuwe omgeving maakt de games stabieler en goedkoper om te produceren.
+De conclusie en de aanbevelingen die voort komen uit het afstudeerverslag zijn input voor de beslissingen binnen \organisation op het gebied van narratieve omgevingsbewerkers. Vanuit deze input zal het bedrijf een nieuwe omgeving opzetten waarin game designers hun narratieven kunnen defini{\"e}ren. Het is daarom ook belangrijk om de game designers bij dit onderzoek te betrekken. Verder zullen toekomstige games de output van deze narratieve bewerker moeten verwerken. Dit betekend dat de nieuwe omgeving ge{\"i}ntegreerd zal moeten worden met het game framework van \organisation en dat dus de game developers inspraak moeten over technische keuzes binnen het project. Tenslotte halen de klanten van \organisation ook profijt uit deze nieuwe omgeving. De nieuwe omgeving maakt de games stabieler en goedkoper om te produceren.
 
 \section{Doelstelling}
 Het bedrijf hoopt na 6 maanden te beginnen met het ontwikkelen van een nieuwe narratieve omgevingsbewerker, zodat ze effici{\"e}nter en voor lagere kosten producten kunnen opleveren aan de klant. Hiervoor is het belangrijk om binnen de 6 maanden zoveel mogelijk kennis en ervaring te verzamelen. Verder kan er nagedacht worden over mogelijke oplossingen op problemen die voort komen uit het onderzoek zodat deze het ontwikkelproces later niet zullen hinderen.
 
 \section{Probleemstelling}
-Voor het defini{\"e}ren van dialogen in \emph{narrative games} gebruikt \organisation verouderde bewerkers die gemaakt zijn in \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3} met \href{https://en.wikipedia.org/wiki/Adobe_Flash_Builder}{Adobe Flash Builder} als \emph{integrated development environment}. Weinig programmeurs bij \organisation hebben kennis van \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3} en daarom wordt het steeds lastiger om op deze bewerkers voort te bouwen te onderhouden. Verder wekt de architectuur en schaalbaarheid van de bewerkers frustratie op bij de game developers en game designers omdat projecten verschillen in content en de bewerkers dit niet of met een moeizame work-around toelaten. Dit alles zorgt voor een daling in effici{\"e}ntie en bekommering op het gebied van innovatie.
-De gewenste situatie is om te beschikken over een overzichtelijke narratieve omgevingsbewerker met een schaalbare en houdbare architectuur. In deze narratieve omgevingsbewerker kan er makkelijk nieuwe content worden toegevoegd door game designers. Vervolgens kunnen game developers dit integreren in de game.
+Voor het defini{\"e}ren van dialogen in \emph{narrative games} gebruikt \organisation verouderde bewerkers die gemaakt zijn met behulp van de \href{https://en.wikipedia.org/wiki/Apache_Flex}{Apache Flex SDK} en \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3} met \href{https://en.wikipedia.org/wiki/Adobe_Flash_Builder}{Adobe Flash Builder} als \emph{integrated development environment}. Echter werken er nog weinig programmeurs bij \organisation die kennis hebben van \href{https://en.wikipedia.org/wiki/Apache_Flex}{Apache Flex} en \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3}. Hierdoor wordt het steeds lastiger om deze bewerkers te onderhouden en uit te breiden. Verder wekt de architectuur en beperkte schaalbaarheid van de bewerkers frustratie op bij de game developers en game designers. Projecten verschillen in features en content, maar de huidige bewerkers maken het moeilijk om deze aspecten te splitsen per project. Hierdoor zitten er veel features in de bewerkers die maar {\'e}{\'e}n keer nodig waren en nu de bewerker bevuilen. Gebruikers van deze bewerkers hebben door de bevuiling steeds minder overzicht. Dit alles zorgt voor een daling in effici{\"e}ntie en innovatie.
+De gewenste situatie is om te beschikken over een overzichtelijke narratieve omgevingsbewerker met een schaalbare en houdbare architectuur. In deze vernieuwde narratieve omgevingsbewerker kunnen er makkelijk nieuwe features en content worden toegevoegd. Verder kan de bewerker worden ingericht per project om vervuiling te voorkomen. Vervolgens kunnen game developers content integreren zonder deze in te hoeven bakken in de bewerker en game engine.
 
 \section{Centrale onderzoeksvraag en deelvragen}
 \subsection{Centrale onderzoeksvraag}
@@ -90,27 +90,29 @@ Hoe kan er een schaalbare narratieve omgevingsbewerker worden opgezet die inzetb
 \item Hoe kan de bewerker inzichtelijk worden gemaakt voor haar gebruikers, zodat zij deze kunnen hanteren?
 \item Wat zijn de mogelijkheden om de data achter een narratief moduleren?
 \item Welke mogelijke dataformaten zijn er om data van de narratieve omgevingsbewerker op te slaan en te exporteren?
+\item Hoe kan de ge{\"e}xporteerde data vanuit de narratieve omgevingsbewerker ge{\"i}nterpreteerd worden door de game engine?
 \end{itemize}
 
 \section{Opdrachtgever}
-De desbetreffende afstudeeropdracht wordt uitgevoerd bij \organisation gevestigd te Rotterdam. Het bedrijf houdt zich bezig met gedragsverandering door middel van \emph{gamification} en \emph{serious games}. En is daarom actief in de creatieve sector.
-Het bedrijf zelf bestaat uit ongeveer 40 medewerkers en maakt deel uit van een grotere firma; \&samhoud. Enkele producten van \organisation zijn: \href{https://ranj.com/products#knowledge-knock-out}{Knowledge Knock-out}, \href{https://ranj.com/projects/corporate/development#mission-zhobia}{Mission Zhobia} (voor Peace Nexus), \href{https://ranj.com/projects/corporate/development#appie-aandeel}{Appie aandeel} (voor Albert Heijn), \href{https://ranj.com/projects/education#pinpin}{PinPin} (voor Rabobank).
+De desbetreffende afstudeeropdracht wordt uitgevoerd bij \organisation gevestigd te Rotterdam. Het bedrijf houdt zich bezig met gedragsverandering door middel van \emph{gamification} en \emph{serious games}. Dit maakt het bedrijf actief in de creatieve sector.
+Het bedrijf zelf bestaat uit ongeveer 40 medewerkers en maakt deel uit van een grotere firma; \&samhoud. Enkele producten van \organisation zijn: \href{https://ranj.com/products#knowledge-knock-out}{Knowledge Knock-out}, \href{https://ranj.com/projects/corporate/development#mission-zhobia}{Mission Zhobia} (voor Peace Nexus), \href{https://ranj.com/projects/corporate/development#appie-aandeel}{Appie aandeel} (voor Albert Heijn) en \href{https://ranj.com/projects/education#pinpin}{PinPin} (voor Rabobank).
 De visie van \organisation luidt: ``Together we build a brighter future''.
-Hiernaast heeft \organisation 4 core values:
+Naast deze visie heeft \organisation 4 core values:
 \begin{description}
-\item[Playfulness] plezier en een goed humeur hebben. Het leven als een spel zien.
+\item[Playfulness] plezier en een goed humeur hebben. Spelenderwijs door het leven gaan.
 \item[Intensity] passie om uit te blinken.
 \item[Authenticity] durf jezelf te zijn, durf anders dan andere te zijn.
-\item[Friendship] je kunt op elkaar rekenen.
+\item[Friendship] je kunt op elkaar rekenen, samen zijn we sterk.
 \end{description}
 
 \section{Werkomgeving en taken}
-Tijdens de afstudeerperiode bij \organisation werkt de student nauw samen met het Corporate Learning team gevestigd te Rotterdam. Het Corporate Learning team is verantwoordelijk voor het ontwikkelen van \emph{serious games} die narratieven gebruiken om gedragsverandering bij bedrijven te bevorderen. Voorbeelden van producten die dit team ontwikkeld heeft zijn \href{https://ranj.com/projects/corporate/development#mission-zhobia}{Mission Zhobia} en \href{https://ranj.nl/projects/corporate/development#internal-investigation-game}{Internal Investigation}. De student zal zich bezig houden met de problemen en frustraties rondom de huidige narratieve omgevingsbewerkers. Hieruit zal de student met suggesties komen om in de nieuwe narratieve omgevingsbewerker deze punten te tackelen.
+Tijdens de afstudeerperiode bij \organisation werkt de student nauw samen met het Corporate Learning team gevestigd te Rotterdam. Het Corporate Learning team is verantwoordelijk voor het ontwikkelen van \emph{serious games} die meestal narratieven gebruiken om gedragsverandering bij bedrijven te bevorderen. Voorbeelden van producten die dit team ontwikkeld heeft zijn \href{https://ranj.com/projects/corporate/development#mission-zhobia}{Mission Zhobia} en \href{https://ranj.nl/projects/corporate/development#internal-investigation-game}{Internal Investigation}. De student zal zich bezig houden met de problemen en frustraties rondom de huidige narratieve omgevingsbewerkers. Hieruit zal de student met suggesties komen om in de toekomstige bewerker deze punten te tackelen.
 \begin{description}
-\item[Analyseren] De eindcompetentie analyseren zal behaald worden door het inventariseren en ontleden van het probleem rondom de huidige bewerkers. Verder zal de student gebruikers van het systeem interviewen om zo meer te weten te komen over het ontwikkelingsproces. Uit deze interviews zal informatie voort komen die de student zal verwerken tot bruikbare informatie om zo tot mogelijke oplossingen te komen.
-\item[Ontwerpen] De eindcompetentie ontwerpen zal de student behalen door de narratieve data achter de bewerkers te structuren. Ook zal de student met suggesties komen voor de architectuur van de nieuwe bewerkers. Tenslotte zal er een advies gevormd worden over de interactie tussen de bewerkers en zijn gebruikers.
-\item[Adviseren] Aan de eindcompetentie adviseren zal de student voldoen door onderbouwd en richtinggevend advies te geven over hoe de problemen rondom de huidige bewerkers aangepakt zouden kunnen worden. Hierbij zullen verschillende frameworks en architecturale principes ter sprake komen.
-\item[Beheren] Door rekening te houden met de context binnen het afstudeertraject en het gebruik van verschillende softwarecomponenten zal de student voldoen aan de eindcompetentie beheren. Verder zal de student aangeleverde code houdbaar en schaalbaar opzetten.
+\item[Analyseren] De eindcompetentie analyseren zal behaald worden door het inventariseren en ontleden van het probleem rondom de huidige bewerkers. Verder zal de student gebruikers van het systeem interviewen om zo meer te weten te komen over het ontwikkelingsproces van een \emph{narrative game}. Uit deze interviews zal informatie voort komen die de student zal verwerken tot bruikbare informatie om zo tot mogelijke oplossingen te komen.
+\item[Ontwerpen] De eindcompetentie ontwerpen zal de student behalen door een voorstel te doen op structuur van de narratieve data achter de toekomstige bewerkers. Ook zal de student met suggesties komen voor de softwarearchitectuur achter de toekomstige bewerkers. Tenslotte zal er een advies worden gevormd betreft de interactie tussen de bewerkers en zijn gebruikers.
+\item[Adviseren] Aan de eindcompetentie adviseren zal de student voldoen door onderbouwd en richtinggevend advies uit te brengen over het aanpakken van problemen rondom de huidige bewerkers. Hierbij zullen verschillende frameworks en architecturale principes ter sprake komen.
+% todo: welke softwarecomponenten?
+\item[Beheren] Door rekening te houden met de context binnen het afstudeertraject en het gebruik van verschillende softwarecomponenten zal de student voldoen aan de eindcompetentie beheren. Verder zal de student aangeleverde code houdbaar en schaalbaar opzetten zodat deze later is in te zien en mogelijk als basis kan fungeren.
 \end{description}
 
 
@@ -131,7 +133,9 @@ Tenslotte zal literatuur onderzoek gedaan worden naar schaalbare en houdbare sys
 %cross interview, meerdere interviews op 1 onderwerp
 
 \section{Projectmethode}
-%agile, iteratief
+Bij \organisation wordt er vooral met de Scrum en Waterval projectmethodes gewerkt. Voor dit afstudeeronderzoek zal er gebruik maken van Scrum. Door iteratief te werken wordt de kracht van Scrum benut
+
+%Met deze projectmethode kan het prototype iteratief  ge{\"e}valueerd en gevalideerd worden. Zo 
 
 \section{Risicoanalyse}
 %interviews niet beschikbaar?
@@ -149,7 +153,8 @@ Tenslotte zal literatuur onderzoek gedaan worden naar schaalbare en houdbare sys
 
 \bibliographystyle{plain}
 \bibliography{References}
-
+%temp
+\nocite{interviewivo}
 
 \chapter{Betrokkenen}
 
@@ -169,7 +174,7 @@ Mobiel telefoonnummer & \mobilephone
 Naam bedrijf/organisatie & \organisation \\
 Naam bedrijfsbegeleider & Ivo Swartjes \\
 E-mailadres & ivo@ranj.nl \\
-Telefoonnummer & +31 (0) 10 21 23 101 \\
+Telefoonnummer \organisation & +31 (0) 10 21 23 101 \\
 Functie/ rol & Technical Team Lead \\
 Bezoekadres locatie organisate & Lloydstraat 21m \\ 
  & 3024 EA Rotterdam \\
@@ -182,9 +187,9 @@ Website organisatie & \url{https://ranj.nl/}
 \begin{table}[h]
 \begin{tabular}{ll}
 Naam bedrijf/organisatie & \organisation \\
-Naam bedrijfsbegeleider &  \\
+Naam bedrijfsbegeleider & Micha{\"e}l Bas \\
 E-mailadres &  \\
-Telefoonnummer & +31 (0) 10 21 23 101 \\
+Telefoonnummer \organisation & +31 (0) 10 21 23 101 \\
 Functie/ rol &  \\
 Bezoekadres locatie organisate & Lloydstraat 21m \\ 
  & 3024 EA Rotterdam \\
