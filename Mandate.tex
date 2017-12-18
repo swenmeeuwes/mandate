@@ -3,17 +3,22 @@
 % Packages
 \usepackage[dutch]{babel}
 \usepackage{datetime}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@makechapterhead}{50\p@}{0pt}{}{}
+\patchcmd{\@makeschapterhead}{50\p@}{0pt}{}{}
+\makeatother
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage{hyperref}
-\hypersetup{
-  colorlinks=true,
-  linkcolor=black,
-  urlcolor=blue
-}
+%\hypersetup{
+%  colorlinks=true,
+%  linkcolor=black,
+%  urlcolor=blue
+%}
 \usepackage{graphicx}
 
 % Literals
-\newcommand{\versionnumber}{0.1}
+\newcommand{\versionnumber}{1.0}
 
 \newcommand{\name}{Swen Meeuwes}
 \newcommand{\studentnumber}{0887127}
