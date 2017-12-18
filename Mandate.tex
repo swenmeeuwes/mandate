@@ -78,7 +78,7 @@ Het opzetten van narratieve omgevingsbewerkers in narratieve \emph{serious games
 %\organisation past \emph{serious games} vooral toe in educatie, trainingen en simulaties door middel van een narratief \cite{websiteranj}.
 %Om workflow te bevorderen wordt er gebruik gemaakt van een dialoog bewerker \cite{interviewivo}. Echter sluit deze tool niet meer aan bij de werkwijze van \organisation \cite{interviewivo} wat zorgt voor een obstakel in het ontwikkelproces.
 
-Rond 2008 begon \organisation{} narratieven te verwerken in hun \emph{serious games} om op verhalende wijze gedragsverandering toe te passen. Om game designers deze narratieven te laten defini{\"e}ren zijn er twee bewerkers opgezet; {\'e}{\'e}n voor de verhaallijn en {\'e}{\'e}n voor de dialogen die plaats vinden in deze verhaallijn. De huidige versies van deze bewerkers zijn gemaakt met behulp van de \href{https://en.wikipedia.org/wiki/Apache_Flex}{Apache Flex SDK} en \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3}.
+Rond 2008 begon \organisation{} narratieven te verwerken in hun \emph{serious games} om op verhalende wijze gedragsverandering toe te passen. Om game designers deze narratieven te laten defini{\"e}ren zijn er twee bewerkers opgezet; {\'e}{\'e}n voor de verhaallijn en {\'e}{\'e}n voor de dialogen die plaats vinden in deze verhaallijn. De huidige versies van deze bewerkers zijn gemaakt met behulp van de \href{https://en.wikipedia.org/wiki/Apache_Flex}{Apache Flex SDK} en \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3} \cite{interviewivo}.
 Over de jaren heen zijn de verwachtingen van de bewerkers veranderd, maar ze zijn niet tot weinig uitgebreid omdat de achterliggende softwarearchitectuur niet schaal- en houdbaar is \cite{interviewivo}. Tenslotte werken er steeds minder programmeurs bij het bedrijf die kennis hebben van de code base achter de bewerkers.
 
 \section{Belang}
@@ -92,6 +92,8 @@ Het bedrijf hoopt na zes maanden te beginnen met het ontwikkelen van een nieuwe 
 \section{Probleemstelling}
 Voor het defini{\"e}ren van dialogen in \emph{narrative games} gebruikt \organisation{} verouderde bewerkers die gemaakt zijn met behulp van de \href{https://en.wikipedia.org/wiki/Apache_Flex}{Apache Flex SDK} en \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3} met \href{https://en.wikipedia.org/wiki/Adobe_Flash_Builder}{Adobe Flash Builder} als \emph{integrated development environment}. Echter werken er nog weinig programmeurs bij \organisation die kennis hebben van \href{https://en.wikipedia.org/wiki/Apache_Flex}{Apache Flex} en \href{http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html}{ActionScript3}. Hierdoor wordt het steeds lastiger om deze bewerkers te onderhouden en uit te breiden. Verder wekt de architectuur en beperkte schaalbaarheid van de bewerkers frustratie op bij de game developers en game designers. Projecten verschillen in features en content, maar de huidige bewerkers maken het moeilijk om deze aspecten te splitsen per project. Hierdoor zitten er veel features in de bewerkers die maar {\'e}{\'e}n keer nodig waren en nu de bewerker bevuilen. Gebruikers van deze bewerkers hebben door de bevuiling steeds minder overzicht. Dit alles zorgt voor een daling in effici{\"e}ntie en innovatie.
 De gewenste situatie is om te beschikken over een overzichtelijke narratieve omgevingsbewerker met een schaalbare en houdbare architectuur. In deze vernieuwde narratieve omgevingsbewerker kunnen er makkelijk nieuwe features en content worden toegevoegd. Verder kan de bewerker worden ingericht per project om vervuiling te voorkomen. Vervolgens kunnen game developers content integreren zonder deze in te hoeven bakken in de bewerker en game engine.
+
+\newpage
 
 \section{Centrale onderzoeksvraag en deelvragen}
 \subsection{Centrale onderzoeksvraag}
@@ -156,14 +158,14 @@ Bij \organisation{} wordt er vooral met de Scrum en Waterval projectmethodes gew
 \chapter{Resultaten}
 
 \section{Beoogd resultaat van de opdracht}
-% prototype proof of concept
+Dit onderzoek zal resulteren in een rapport waarin advies uitgebracht wordt over het moduleren van data achter een narratief; het dataformaat van de ge{\"e}xporteerde data; hoe narratieve data ge{\"e}nterpreteerd kan worden door de game engine en hoe de bewerkers inzichtelijk gemaakt kunnen worden voor haar gebruikers. Hierbij zullen eventuele prototypes geleverd worden die een mogelijke implementatie van de adviezen zullen tonen. Deze prototypes zullen per stuk {\'e}{\'e}n probleem binnen het onderzoek tackelen en aantonen of de geadviseerde oplossing bruikbaar is. Verder zal elk prototype met een technisch ontwerp worden aangeleverd.
 
 \section{Kwaliteitsverwachtingen}
-\organisation{} maakt gebruik van 2 game engines; Unity3D en een eigen engine. De eigen engine bestaat uit 2 delen; de \emph{\organisation{} Software Library} gemaakt in ECMAScript 5 en het \emph{Narrative Game Template} wat gebouwd is in ECMAScript 5 en gebruik maakt van de \href{https://createjs.com/}{CreateJS library suite}. Tijdens het onderzoek moet hier rekening mee worden gehouden, zodat het resultaat toepasbaar is op deze game engines.
+\organisation{} maakt gebruik van 2 game engines; Unity3D en een eigen engine. De eigen engine bestaat uit 2 delen; de \emph{\organisation{} Software Library} gemaakt in ECMAScript 5 en het \emph{Narrative Game Template} wat gebouwd is in ECMAScript 5 en gebruik maakt van de \href{https://createjs.com/}{CreateJS library suite} \cite{interviewivo}. Tijdens het onderzoek moet hier rekening mee worden gehouden, zodat het resultaat toepasbaar is op deze game engines.
 
 % Chapter: Literatuur
 \bibliographystyle{plain}
-\renewcommand{\bibname}{Literatuur}
+\renewcommand{\bibname}{Referenties}
 \bibliography{References}
 \nocite{*}
 
@@ -194,14 +196,16 @@ Website organisatie & \url{https://ranj.nl/}
 \end{tabular}
 \end{table}
 
+\newpage
+
 \section*{Opdrachtgever}
 \begin{table}[h]
 \begin{tabular}{ll}
 Naam bedrijf/organisatie & \organisation \\
-Naam opdrachtgever & \\ %Micha{\"e}l Bas?
-E-mailadres &  \\
+Naam opdrachtgever & Micha{\"e}l Bas \\
+E-mailadres & michael@ranj.nl \\
 Telefoonnummer \organisation & +31 (0) 10 21 23 101 \\
-Functie/ rol &  \\
+Functie/ rol & CEO \\
 Bezoekadres locatie organisate & Lloydstraat 21m \\ 
  & 3024 EA Rotterdam \\
  & The Netherlands \\
